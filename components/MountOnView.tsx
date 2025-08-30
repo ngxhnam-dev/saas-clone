@@ -83,7 +83,7 @@ export default function MountOnView({
   }, [requireScrollOnSmall, scrollThresholdPx, hasScrolled]);
 
   // Quan sát vào viewport
-  const inView = useInView(ref, { margin: rootMargin, amount, once });
+  const inView = useInView(ref, { margin: rootMargin as any, amount, once });
 
   // Điều kiện mount:
   // - Desktop: chỉ cần inView
