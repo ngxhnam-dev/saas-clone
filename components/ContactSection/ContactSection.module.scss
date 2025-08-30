@@ -1,0 +1,202 @@
+.contact-section {
+  padding: 120px 0;
+
+  .contact-help {
+    display: flex;
+  }
+  .contact-help-item {
+    display: flex;
+    column-gap: 20px;
+    flex: 1;
+    margin: 20px 0;
+    animation: fadeInDown ease both;
+
+    h1 {
+      font-size: 24px;
+      padding-bottom: 20px;
+    }
+    p {
+      width: 80%;
+      padding-bottom: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: #101629;
+      font-weight: 600;
+      display: inline-block;
+      transition: 1s;
+
+      &:hover {
+        background-image: linear-gradient(
+          -90deg,
+          #0090ff 0%,
+          #4e70fc 51%,
+          #9b4ff9 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+
+        i {
+          background-image: linear-gradient(
+            -90deg,
+            #0090ff 0%,
+            #4e70fc 51%,
+            #9b4ff9 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          -webkit-text-fill-color: transparent;
+          transform: translateX(5px);
+          transition: 1s;
+        }
+      }
+    }
+  }
+
+  .contact-content {
+    display: flex;
+    border-radius: 80px;
+    flex-direction: column;
+    gap: 80px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10% 30%;
+    margin: 80px 0;
+    background: url('https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/cta-bg.png')
+      no-repeat center;
+    background-size: cover;
+  }
+
+  h2 {
+    width: 80%;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  input {
+    width: 205px;
+    height: 60px;
+    border: none;
+    color: #101629;
+    font-weight: 600;
+    margin: 0px 7px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fff;
+
+    &::placeholder {
+      color: #101629;
+      opacity: 1t;
+      font-weight: 600;
+    }
+  }
+  button {
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition: 500ms all ease;
+    width: 175px;
+    height: 60px;
+    overflow: hidden;
+
+    span {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      font-weight: 600;
+      margin: 0px 7px;
+      background-color: transparent;
+      &::before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        width: 300%;
+        height: 500%;
+        top: 200%;
+        left: -100%;
+        background: rgb(0, 87, 252);
+        border-radius: 50%;
+        transform: translateY(0);
+        transition: transform 800ms;
+      }
+    }
+    &:hover {
+      border: 2px solid #1189fe;
+      background-color: #1189fe;
+    }
+    &:hover span::before {
+      transform: translateY(-80%);
+    }
+    &:hover span i {
+      transform: translateX(5px);
+      transition: 500ms all ease;
+    }
+  }
+
+  .contact-sub-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    span {
+      min-width: 30px;
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-help {
+    flex-direction: column;
+  }
+
+  .contact-content {
+    padding: 20% 12% !important;
+    h2 {
+      font-size: 36px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .contact-help {
+    flex-direction: column;
+  }
+
+  .contact-content {
+    padding: 30% 10px !important;
+    h2 {
+      font-size: 28px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .contact-sub-content {
+      flex-direction: column;
+    }
+  }
+}
+
+/* Animation*/
+@keyframes fadeInDown {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

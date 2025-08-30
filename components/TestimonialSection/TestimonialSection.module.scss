@@ -1,0 +1,368 @@
+.testimonial-section {
+  position: relative;
+  min-height: 100vh;
+
+  .testimonial-shape1,
+  .testimonial-shape2 {
+    position: absolute;
+    z-index: -10;
+  }
+
+  .testimonial-shape1 {
+    bottom: 0;
+    left: 0;
+  }
+  .testimonial-shape2 {
+    top: 0;
+    right: 0;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    background: url('https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/map1.png')
+      no-repeat center;
+    background-size: contain;
+    h1 {
+      font-weight: 700;
+    }
+    .rating {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      color: #ffa352;
+    }
+
+    .testimonial-content {
+      position: relative;
+      width: 100%;
+      min-height: 894px;
+
+      .testimonial-dot1,
+      .testimonial-dot2,
+      .testimonial-dot3,
+      .testimonial-dot4,
+      .testimonial-dot5,
+      .testimonial-dot6,
+      .testimonial-dot7,
+      .testimonial-dot8 {
+        position: absolute;
+        z-index: -5;
+      }
+
+      .testimonial-dot1 {
+        top: 0%;
+        right: 0;
+        animation: digital_animation_1 20s infinite linear alternate;
+      }
+      .testimonial-dot2 {
+        top: 35%;
+        right: 15%;
+        animation: digital_animation_2 20s infinite linear alternate;
+      }
+      .testimonial-dot3 {
+        top: 20%;
+        left: 5%;
+        animation: digital_animation_1 20s infinite linear alternate;
+      }
+      .testimonial-dot4 {
+        bottom: 20%;
+        left: -15%;
+        animation: digital_animation_2 20s infinite linear alternate;
+      }
+      .testimonial-dot5 {
+        top: 10%;
+        right: 0;
+        animation: digital_animation_1 20s infinite linear alternate;
+      }
+      .testimonial-dot6 {
+        top: 15%;
+        left: 15%;
+        animation: digital_animation_2 20s infinite linear alternate;
+      }
+      .testimonial-dot7 {
+        top: 45%;
+        left: 5%;
+        animation: digital_animation_1 20s infinite linear alternate;
+      }
+      .testimonial-dot8 {
+        bottom: 30%;
+        right: -15%;
+        animation: digital_animation_2 20s infinite linear alternate;
+      }
+
+      .testimonial-content {
+        position: relative;
+        padding: 10% auto;
+      }
+    }
+  }
+}
+
+.testimonial-slide {
+  width: 100%;
+  padding: 100px 0 0 0;
+  position: relative;
+}
+
+.testimonial-card {
+  padding: 100px 0 0 0;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    background-color: #051936;
+  }
+
+  &::before {
+    width: 274px;
+    height: 274px;
+    transform: translateY(47px);
+    opacity: 0.15;
+    z-index: -1;
+  }
+
+  &::after {
+    width: 370px;
+    height: 370px;
+    opacity: 0.1;
+    z-index: -2;
+  }
+
+  .testimonial-card-avatar {
+    border-radius: 999px;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+
+    img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+    }
+  }
+  .testimonial-card-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 60px 40px;
+    background: #fff;
+    border-radius: 60px;
+    box-shadow: 0.872px 4.985px 30px 0px rgba(6, 17, 59, 0.1);
+    color: #526a8b;
+
+    span {
+      font-size: 26px;
+      color: #25373f;
+      font-weight: 700;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.testimonial-pagination button {
+  border-radius: 100%;
+  overflow: hidden;
+  border: 0px;
+  width: 64px;
+  height: 64px;
+  /* lớp phủ */
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(232, 230, 230, 0.4); /* màu overlay mặc định */
+    opacity: 1; /* ẩn đi */
+    transition: opacity 0.3s ease;
+  }
+
+  &:nth-child(1) {
+    position: absolute;
+    object-fit: contain;
+    left: 10%;
+    top: 20%;
+    animation: floating 10s infinite linear alternate;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  &:nth-child(2) {
+    position: absolute;
+    object-fit: contain;
+    left: 5%;
+    top: 50%;
+    animation: floating 10s infinite linear alternate;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  &:nth-child(3) {
+    position: absolute;
+    object-fit: contain;
+    left: 15%;
+    top: 80%;
+    animation: floating 10s infinite linear alternate;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  &:nth-child(4) {
+    position: absolute;
+    object-fit: contain;
+    right: 10%;
+    top: 20%;
+    animation: floating 10s infinite linear alternate;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  &:nth-child(5) {
+    position: absolute;
+    object-fit: contain;
+    right: 5%;
+    top: 50%;
+    animation: floating 10s infinite linear alternate;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  &:nth-child(6) {
+    position: absolute;
+    object-fit: contain;
+    right: 15%;
+    top: 80%;
+    animation: floating 10s infinite linear alternate;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.testimonial-pagination-arrow-btn {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  column-gap: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  span {
+    z-index: 1;
+    position: relative;
+    background: #e3e3e3;
+    height: 40px;
+    width: 40px;
+    color: #25373f;
+    font-weight: 500;
+    border-radius: 50%;
+    box-shadow: 0.872px 1px 10px 0px rgba(6, 17, 59, 0.1);
+    transition: color 0.5s ease, border-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .testimonial-pagination-arrow {
+      color: #25373f;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      inset: 0;
+      border-radius: 50%;
+      background: radial-gradient(circle, #0090ff, #4e70fc, #9b4ff9);
+      transform-origin: center;
+      transform: scale(0);
+      transition: transform 0.6s cubic-bezier(0.21, 0.96, 0.35, 1);
+      z-index: -1;
+    }
+    &:hover::before {
+      transform: scale(1);
+    }
+    &:hover .testimonial-pagination-arrow {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .testimonial-card {
+    margin: 0;
+
+    &::before {
+      transform: translateY(20px);
+    }
+    &::after {
+      transform: translateY(-30px);
+    }
+
+    .testimonial-card-avatar {
+      width: 100px;
+      height: 100px;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+/* Animation*/
+@keyframes digital_animation_1 {
+  0% {
+    -webkit-transform: translate(-300px, 151px) rotate(0);
+    transform: translate(-300px, 151px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translate(251px, -200px) rotate(180deg);
+    transform: translate(251px, -200px) rotate(180deg);
+  }
+}
+@keyframes digital_animation_2 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0);
+    transform: translate(0, 0) rotate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(73px, -1px) rotate(36deg);
+    transform: translate(73px, -1px) rotate(36deg);
+  }
+  40% {
+    -webkit-transform: translate(111px, 72px) rotate(72deg);
+    transform: translate(111px, 72px) rotate(72deg);
+  }
+  60% {
+    -webkit-transform: translate(93px, 122px) rotate(108deg);
+    transform: translate(93px, 122px) rotate(108deg);
+  }
+  80% {
+    -webkit-transform: translate(-70px, 72px) rotate(124deg);
+    transform: translate(-70px, 72px) rotate(124deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0);
+    transform: translate(0, 0) rotate(0);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: rotate(0deg) translate(-10px) rotate(0deg);
+    transform: rotate(0deg) translate(-10px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+    transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
+}

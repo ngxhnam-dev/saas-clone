@@ -1,0 +1,353 @@
+/* ========= Breakpoints ========= */
+$bp-mobile: 640px; // ~sm
+$bp-tablet: 992px; // ~md/lg
+$bp-laptop: 1200px; // ~xl
+
+.homenest-challenge-section {
+  width: 100%;
+  background: url('https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/port-bg.png')
+    no-repeat center / cover;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* ===== Title ===== */
+  .homenest-challenge-title {
+    display: flex;
+    column-gap: 5rem;
+    row-gap: 1rem;
+    align-items: flex-start;
+    width: 100%;
+
+    h2 {
+      font-size: clamp(24px, 3.2vw, 36px);
+      font-weight: 700;
+      line-height: 1.3;
+      max-width: 30%;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: #898888;
+      max-width: 40%;
+    }
+  }
+
+  /* ===== Progress ===== */
+  .homenest-challenge-progress {
+    width: 100%;
+    height: 10px;
+  }
+
+  /* ===== Viewport / Track ===== */
+  .homenest-challenge-viewport {
+    overflow: hidden;
+    position: relative;
+    padding: 40px 0;
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .homenest-challenge-track {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    width: 100%;
+    transition: transform 600ms ease;
+    will-change: transform;
+
+    /* Ẩn scrollbar */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    scrollbar-width: none;
+  }
+
+  /* ===== Slide ===== */
+  .homenest-challenge-slide {
+    flex: 0 0 60%;
+    max-width: 631px;
+    padding-inline: 12px;
+    position: relative;
+  }
+
+  /* ===== Card / Item ===== */
+  .homenest-challenge-item {
+    width: 100%;
+    max-width: 631px;
+    margin: 80px 0;
+    min-height: 367px;
+    padding: 64px 56px;
+    background-color: #fff;
+    box-shadow: 0 0 13px 0 rgba(154, 154, 154, 0.25);
+    border-radius: 40px;
+
+    p {
+      background: linear-gradient(
+        -90deg,
+        #0090ff 0%,
+        #4e70fc 51%,
+        #9b4ff9 100%
+      );
+      border-radius: 10px;
+      padding: 6px 12px;
+      margin: 24px 0;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      width: fit-content;
+      min-width: 120px;
+      text-align: center;
+    }
+
+    h3 {
+      margin: 24px 0;
+      font-weight: 800;
+      font-size: clamp(18px, 2vw, 22px);
+      line-height: 1.4;
+      color: #20395c;
+    }
+
+    span {
+      color: #7086a4;
+      font-size: 14px;
+      line-height: 1.6;
+      display: inline-block;
+    }
+  }
+
+  /* ===== Variant có background ===== */
+  .add-bg {
+    z-index: 1;
+    background: url('https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/blg1.png')
+      no-repeat center / cover;
+    ::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      background: url('https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/cta-bg.png')
+        no-repeat center;
+      width: 70%;
+      height: 90%;
+      border-radius: 40px;
+      top: 5%;
+      right: -10px;
+    }
+    h3 {
+      color: #fff;
+      z-index: 2;
+    }
+  }
+
+  /* ===== Navigation ===== */
+  .homenest-challenge-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    &-number {
+      display: flex;
+      align-items: end;
+      column-gap: 28px;
+      padding: 12px 0;
+
+      p {
+        color: #a4abb4;
+        text-align: end;
+        margin: 0;
+      }
+    }
+
+    .homenest-challenge-nav-toggle {
+      display: flex;
+      column-gap: 10px;
+      padding: 12px 0;
+
+      .homenest-challenge-nav-toogle-button {
+        z-index: 1;
+        position: relative;
+        background: #fff;
+        height: 58px;
+        width: 58px;
+        color: #505b93;
+        font-weight: 500;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        transition: color 0.5s ease, border-color 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        .homenest-challenge-nav-toogle-button-arrow {
+          color: #25373f;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: -30px;
+          inset: 0;
+          border-radius: 50%;
+          background: radial-gradient(circle, #0090ff, #4e70fc, #9b4ff9);
+          transform-origin: center;
+          transform: scale(0);
+          transition: transform 0.6s cubic-bezier(0.21, 0.96, 0.35, 1);
+          z-index: -1;
+        }
+        &:hover .homenest-challenge-nav-toogle-button-arrow {
+          color: #fff;
+        }
+        &:hover::before {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+
+  .toBig {
+    color: #20395c !important;
+    font-size: clamp(36px, 6vw, 60px);
+    line-height: 0.9;
+  }
+
+  /* ========================= */
+  /* ======= Responsive ====== */
+  /* ========================= */
+
+  /* Tablet ≤ 992px */
+  @media (max-width: #{$bp-tablet}) {
+    padding: 72px 48px;
+
+    .add-bg::before {
+      width: 0;
+    }
+
+    .homenest-challenge-title {
+      column-gap: 2rem;
+
+      h2 {
+        max-width: 50%;
+      }
+      p {
+        max-width: 50%;
+      }
+    }
+
+    .homenest-challenge-viewport {
+      padding: 32px 0;
+    }
+
+    .homenest-challenge-slide {
+      flex-basis: 70%;
+    }
+
+    .homenest-challenge-item {
+      padding: 48px 40px;
+      border-radius: 32px;
+      min-height: 320px;
+    }
+
+    .homenest-challenge-nav {
+      &-number {
+        font-size: 14px;
+        visibility: hidden;
+      }
+      &-toggle .homenest-challenge-nav-toggle-button {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+
+  /* Mobile ≤ 640px */
+  @media (max-width: #{$bp-mobile}) {
+    padding: 56px 16px;
+
+    .homenest-challenge-title {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: 12px;
+
+      h2,
+      p {
+        max-width: 100%;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .homenest-challenge-progress {
+      height: 6px;
+    }
+
+    .homenest-challenge-viewport {
+      padding: 20px 0;
+      margin: 20px 0;
+    }
+
+    /* Kích hoạt scroll-snap để vuốt mượt từng card */
+    .homenest-challenge-track {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 0;
+    }
+
+    .homenest-challenge-slide {
+      flex: 0 0 88%;
+      max-width: none;
+      padding-inline: 8px;
+      scroll-snap-align: start;
+    }
+
+    .homenest-challenge-item {
+      padding: 28px 20px;
+      border-radius: 24px;
+      min-height: unset; /* để auto theo nội dung */
+      height: auto;
+
+      p {
+        margin: 16px 0;
+        min-width: 96px;
+        font-size: 12px;
+      }
+      h3 {
+        margin: 16px 0;
+      }
+      span {
+        font-size: 13px;
+      }
+    }
+
+    .toBig {
+      font-size: clamp(28px, 9vw, 44px);
+    }
+  }
+
+  /* Laptop ≤ 1200px (nhẹ) */
+  @media (max-width: #{$bp-laptop}) and (min-width: #{$bp-tablet + 1}) {
+    .homenest-challenge-slide {
+      flex-basis: 64%;
+    }
+  }
+}
+
+@media (max-width: #{$bp-tablet}) {
+  .add-bg ::before {
+    width: 0px !important;
+  }
+}
+/* Reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .homenest-challenge-section .homenest-challenge-track {
+    transition: none;
+  }
+}
