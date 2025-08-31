@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './SetupSection.module.scss';
 import MountOnView from '../MountOnView';
+import Image from 'next/image';
 
 const SetupSection = () => {
   return (
     <div className={styles.section}>
       <div className="container">
-        <MountOnView minHeight={0} rootMargin="-100px 0px">
+        <MountOnView minHeight={100} rootMargin="-100px 0px">
           <h2
             className={`${styles.fadeInUp} ${styles.animated} ${styles.title}`}
           >
@@ -15,7 +16,7 @@ const SetupSection = () => {
         </MountOnView>
 
         <div className={styles.content}>
-          <MountOnView minHeight={0} rootMargin="-200px 0px">
+          <MountOnView minHeight={100} rootMargin="-200px 0px">
             <div className="row d-flex justify-content-center">
               <div className="col-lg-2">
                 <div
@@ -47,14 +48,26 @@ const SetupSection = () => {
           </MountOnView>
         </div>
 
-        <MountOnView minHeight={0} rootMargin="-300px 0px">
+        <MountOnView minHeight={100} rootMargin="-200px 0px">
           <div
             className={`${styles.fadeInUp} ${styles.animated} ${styles.download}`}
           >
             <p>Download this Software from</p>
-            <div className="d-flex justify-content-center">
-              <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/app-btn1.png" />
-              <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/app-btn2.png" />
+            <div className={`${styles['download-btn-wrapper']}`}>
+              <Image
+                className={`${styles['download-btn']}`}
+                alt=""
+                width={218}
+                height={72}
+                src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/app-btn1.png"
+              />
+              <Image
+                className={`${styles['download-btn']}`}
+                alt=""
+                width={218}
+                height={72}
+                src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/app-btn2.png"
+              />
             </div>
           </div>
         </MountOnView>

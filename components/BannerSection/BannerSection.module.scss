@@ -1,5 +1,5 @@
 /* ========= Breakpoints ========= */
-$bp-mobile-sm: 340px;
+$bp-mobile-sm: 430px;
 $bp-mobile: 640px; // ~sm
 $bp-tablet: 992px; // ~md/lg
 $bp-laptop: 1200px; // ~xl
@@ -116,7 +116,7 @@ $bp-laptop: 1200px; // ~xl
 .imgWrap {
   display: flex;
   justify-content: center;
-  max-width: 940px;
+  // max-width: 940px;
   padding-top: 150px;
   margin: 0 auto;
   position: relative;
@@ -124,8 +124,9 @@ $bp-laptop: 1200px; // ~xl
   .img2,
   .img3 {
     position: absolute;
+    margin: 0 auto;
     img {
-      width: 100%;
+      max-width: 100%;
       height: auto;
     }
   }
@@ -135,12 +136,12 @@ $bp-laptop: 1200px; // ~xl
   }
   .img2 {
     top: -150%;
-    left: -10%;
+    right: 70%;
     z-index: 2;
   }
   .img3 {
     top: 30%;
-    right: -10%;
+    left: 70%;
     z-index: 2;
   }
 }
@@ -156,14 +157,14 @@ $bp-laptop: 1200px; // ~xl
       }
     }
     .img2 {
-      left: -4% !important;
+      // left: -4% !important;
       top: -160px !important;
       img {
         transform: scale(0.6) !important;
       }
     }
     .img3 {
-      right: -3% !important;
+      // right: -3% !important;
       top: -40px !important;
       img {
         transform: scale(0.7) !important;
@@ -196,17 +197,17 @@ $bp-laptop: 1200px; // ~xl
       }
     }
     .img2 {
-      left: -20%;
-      top: -360px;
+      // left: -20%;
+      top: -260px;
       img {
-        transform: scale(0.3) !important;
+        transform: scale(0.8) !important;
       }
     }
     .img3 {
-      right: -20%;
-      top: -320px;
+      // right: -20%;
+      top: -200px;
       img {
-        transform: scale(0.3) !important;
+        transform: scale(0.8) !important;
       }
     }
   }
@@ -230,17 +231,17 @@ $bp-laptop: 1200px; // ~xl
       }
     }
     .img2 {
-      left: -30% !important;
-      top: -280px !important;
+      // left: -30% !important;
+      top: -160px !important;
       img {
-        transform: scale(0.3) !important;
+        transform: scale(0.8) !important;
       }
     }
     .img3 {
-      right: -30% !important;
-      top: -260px !important;
+      // right: -30% !important;
+      top: -100px !important;
       img {
-        transform: scale(0.3) !important;
+        transform: scale(0.8) !important;
       }
     }
   }

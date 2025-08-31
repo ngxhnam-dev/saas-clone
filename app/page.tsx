@@ -31,8 +31,8 @@ export default function Page() {
       <FeatureSection />
       <ServiceSection />
       <TestimonialSection />
-      <ChallengeSection />
-      <ContactSection />
+      {/* <ChallengeSection /> */}
+      {/* <ContactSection /> */}
     </main>
   );
 }

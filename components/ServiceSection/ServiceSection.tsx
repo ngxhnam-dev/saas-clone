@@ -8,6 +8,7 @@ import styles from './ServiceSection.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
+import Image from 'next/image';
 
 const arr = [
   {
@@ -178,13 +179,28 @@ const ServiceSection = () => {
         <div className={styles['homenest-service-img-wrapper']}>
           <div className={cn(styles['homenest-service-img'], 'mb-3')}>
             <div className={styles['homenest-service-img-item']}>
-              <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ts3.jpg" />
+              <Image
+                src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ts3.jpg"
+                alt=""
+                width={55}
+                height={55}
+              />
             </div>
             <div className={styles['homenest-service-img-item']}>
-              <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ts2.jpg" />
+              <Image
+                src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ts2.jpg"
+                alt=""
+                width={55}
+                height={55}
+              />
             </div>
             <div className={styles['homenest-service-img-item']}>
-              <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ts1.jpg" />
+              <Image
+                src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ts1.jpg"
+                alt=""
+                width={55}
+                height={55}
+              />
             </div>
           </div>
           <span className={cn(styles['homenest-service-connect-text'], 'mb-2')}>

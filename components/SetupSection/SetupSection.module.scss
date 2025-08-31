@@ -1,5 +1,5 @@
 /* ========= Breakpoints ========= */
-$bp-mobile-sm: 340px; // ~sm
+$bp-mobile-sm: 430px; // ~sm
 $bp-mobile: 640px; // ~sm
 $bp-tablet: 992px; // ~md/lg
 $bp-laptop: 1200px; // ~xl
@@ -88,10 +88,10 @@ $bp-laptop: 1200px; // ~xl
       BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
   }
-  img {
-    height: 60px;
-    margin: 0 10px;
-    cursor: pointer;
+
+  .download-btn-wrapper {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -99,10 +99,14 @@ $bp-laptop: 1200px; // ~xl
   .line {
     display: none;
   }
+  .download-btn {
+    scale: 0.7;
+  }
 }
 @media (max-width: #{$bp-mobile-sm}) {
-  .download img {
-    scale: 0.6;
+  .download-btn {
+    width: 160px;
+    height: auto;
   }
 }
 /* Animation */

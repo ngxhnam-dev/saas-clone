@@ -1,6 +1,11 @@
+/* ========= Breakpoints ========= */
+$bp-mobile-sm: 430px; // ~sm
+$bp-mobile: 640px; // ~sm
+$bp-tablet: 992px; // ~md/lg
+$bp-laptop: 1200px; // ~xl
+
 .testimonial-section {
   position: relative;
-  min-height: 100vh;
 
   .testimonial-shape1,
   .testimonial-shape2 {
@@ -9,10 +14,14 @@
   }
 
   .testimonial-shape1 {
+    width: 100%;
+    height: auto;
     bottom: 0;
     left: 0;
   }
   .testimonial-shape2 {
+    width: 100%;
+    height: auto;
     top: 0;
     right: 0;
   }
@@ -38,7 +47,8 @@
     .testimonial-content {
       position: relative;
       width: 100%;
-      min-height: 894px;
+      display: flex;
+      justify-content: center;
 
       .testimonial-dot1,
       .testimonial-dot2,
@@ -53,14 +63,14 @@
       }
 
       .testimonial-dot1 {
-        top: 0%;
+        top: 0;
         right: 0;
         animation: digital_animation_1 20s infinite linear alternate;
       }
       .testimonial-dot2 {
         top: 35%;
         right: 15%;
-        animation: digital_animation_2 20s infinite linear alternate;
+        animation: digital_animation_1 20s infinite linear alternate;
       }
       .testimonial-dot3 {
         top: 20%;
@@ -74,8 +84,8 @@
       }
       .testimonial-dot5 {
         top: 10%;
-        right: 0;
-        animation: digital_animation_1 20s infinite linear alternate;
+        right: 30%;
+        animation: digital_animation_2 20s infinite linear alternate;
       }
       .testimonial-dot6 {
         top: 15%;
@@ -88,8 +98,8 @@
         animation: digital_animation_1 20s infinite linear alternate;
       }
       .testimonial-dot8 {
-        bottom: 30%;
-        right: -15%;
+        bottom: -30%;
+        right: 30%;
         animation: digital_animation_2 20s infinite linear alternate;
       }
 
@@ -294,6 +304,14 @@
   }
 }
 
+@media (max-width: #{$bp-laptop}) {
+  .testimonial-shape1,
+  .testimonial-shape2 {
+    width: 60% !important;
+    height: fit-content !important;
+  }
+}
+
 @media (max-width: 630px) {
   .testimonial-card {
     margin: 0;
@@ -330,8 +348,8 @@
 }
 @keyframes digital_animation_2 {
   0% {
-    -webkit-transform: translate(0, 0) rotate(0);
-    transform: translate(0, 0) rotate(0);
+    // -webkit-transform: translate(0, 0) rotate(0);
+    // transform: translate(0, 0) rotate(0);
   }
 
   20% {

@@ -1,5 +1,5 @@
 /* ========= Breakpoints ========= */
-$bp-mobile-sm: 340px;
+$bp-mobile-sm: 430px;
 $bp-mobile: 640px; // ~sm
 $bp-tablet: 992px; // ~md/lg
 $bp-laptop: 1200px; // ~xl
@@ -11,7 +11,6 @@ $bp-laptop: 1200px; // ~xl
 }
 
 .imgWrap {
-  margin-top: 80px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -24,17 +23,16 @@ $bp-laptop: 1200px; // ~xl
 }
 .img1 {
   position: absolute;
-  left: -20%;
 }
 .img2 {
   position: absolute;
-  top: 40px;
-  right: 0px;
+  top: 100px;
+  right: 0;
 }
 .img3 {
   position: absolute;
-  right: -20px;
-  bottom: -540px;
+  top: 220px;
+  right: 0;
 }
 
 .textWrap {
@@ -167,6 +165,48 @@ $bp-laptop: 1200px; // ~xl
 }
 
 // Responsive
+
+@media (max-width: #{$bp-mobile-sm}) {
+  .section {
+    padding-top: 0;
+  }
+
+  .featureWrap {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100% !important;
+  }
+  .featureItem {
+    width: 100% !important;
+  }
+
+  .shape {
+    display: none;
+  }
+  .img1 {
+    scale: 0.7;
+  }
+  .img2 {
+    scale: 0.6;
+    right: -24%;
+  }
+  .img3 {
+    scale: 0.6;
+    right: -20%;
+  }
+  .rightContent {
+    margin-top: 140% !important;
+  }
+  .funWrap {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+  .funItem {
+    width: 100%;
+  }
+}
+
 @media (min-width: #{$bp-mobile-sm}) and (max-width: #{$bp-mobile}) {
   .section {
     padding: 10px;
@@ -186,17 +226,15 @@ $bp-laptop: 1200px; // ~xl
     margin: 0;
   }
   .img1 {
-    top: 0 !important;
-    scale: 0.7 !important;
+    scale: 0.7;
   }
   .img2 {
-    top: 120px;
+    scale: 0.7;
     right: -10%;
-    scale: 0.8 !important;
   }
   .img3 {
-    right: -24%;
-    scale: 0.5 !important;
+    scale: 0.5;
+    right: -22%;
   }
 
   .featureWrap {
@@ -237,22 +275,9 @@ $bp-laptop: 1200px; // ~xl
   .content {
     display: flex;
     flex-direction: column;
-
-    div {
-      width: 100%;
-    }
   }
-  .img1 {
-    top: -80px !important;
-  }
-  .img2 {
-    right: -50% !important;
-    top: 0;
-  }
-  .img3 {
-    right: -20%;
-    top: 100px;
-    scale: 0.8;
+  .shape {
+    display: none;
   }
   .rightContent {
     margin-top: 80% !important;
@@ -268,50 +293,6 @@ $bp-laptop: 1200px; // ~xl
     .funItem {
       width: 200px;
     }
-  }
-}
-
-@media (max-width: #{$bp-mobile-sm}) {
-  .section {
-    padding-top: 0;
-  }
-
-  .featureWrap {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100% !important;
-  }
-  .featureItem {
-    width: 100% !important;
-  }
-
-  .shape {
-    display: none;
-  }
-  .img1 {
-    scale: 0.6 !important;
-    top: -80px !important;
-  }
-  .img2 {
-    scale: 0.4 !important;
-    right: -30% !important;
-    top: 0;
-  }
-  .img3 {
-    scale: 0.3 !important;
-    right: -40%;
-    top: -20px;
-  }
-  .rightContent {
-    margin-top: 120% !important;
-  }
-  .funWrap {
-    flex-direction: column;
-    gap: 20px;
-    padding: 10px;
-  }
-  .funItem {
-    width: 100%;
   }
 }
 

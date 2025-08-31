@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './AboutSection.module.scss';
 import MountOnView from '../MountOnView';
+import Image from 'next/image';
 
 const AboutSection = () => {
   return (
@@ -18,23 +19,43 @@ const AboutSection = () => {
             <span
               className={`${styles.shape} ${styles.fadeInLeft} ${styles.animated}`}
             >
-              <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab-bg1.png" />
+              <Image
+                alt=""
+                src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab-bg1.png"
+                width={546}
+                height={553}
+              />
             </span>
             <div className={styles.imgWrap}>
               <div
                 className={`${styles.fadeInRight} ${styles.animated} ${styles.img1}`}
               >
-                <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab1.png" />
+                <Image
+                  src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab1.png"
+                  alt=""
+                  width={474}
+                  height={518}
+                />
               </div>
               <div
                 className={`${styles.fadeInLeft} ${styles.animated} ${styles.img2}`}
               >
-                <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab2.png" />
+                <Image
+                  src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab2.png"
+                  alt=""
+                  width={355}
+                  height={182}
+                />
               </div>
               <div
                 className={`${styles.fadeInLeft} ${styles.animated} ${styles.img3}`}
               >
-                <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab3.png" />
+                <Image
+                  alt=""
+                  width={439}
+                  height={326}
+                  src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab3.png"
+                />
               </div>
             </div>
           </MountOnView>
@@ -61,7 +82,12 @@ const AboutSection = () => {
                   className={`${styles.fadeInRight} ${styles.animated} ${styles.featureItem}`}
                 >
                   <div className={`${styles.icon}`}>
-                    <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic1.png" />
+                    <Image
+                      alt=""
+                      width={18}
+                      height={18}
+                      src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic1.png"
+                    />
                   </div>
                   <div className={styles.text}>
                     <h3>Hashtag targetting</h3>
@@ -73,7 +99,12 @@ const AboutSection = () => {
                   className={`${styles.fadeInLeft} ${styles.animated} ${styles.featureItem}`}
                 >
                   <div className={`${styles.icon}`}>
-                    <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic2.png" />
+                    <Image
+                      alt=""
+                      width={18}
+                      height={10}
+                      src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic2.png"
+                    />
                   </div>
                   <div className={styles.text}>
                     <h3>Track Growth</h3>
@@ -85,7 +116,12 @@ const AboutSection = () => {
                   className={`${styles.fadeInRight} ${styles.animated} ${styles.featureItem}`}
                 >
                   <div className={`${styles.icon}`}>
-                    <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic3.png" />
+                    <Image
+                      alt=""
+                      width={20}
+                      height={16}
+                      src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic3.png"
+                    />
                   </div>
                   <div className={styles.text}>
                     <h3>Track Activity</h3>
@@ -99,7 +135,12 @@ const AboutSection = () => {
                   <div
                     className={`${styles.icon} d-flex justify-content-center align-items-center`}
                   >
-                    <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic4.png" />
+                    <Image
+                      alt=""
+                      width={25}
+                      height={17}
+                      src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic4.png"
+                    />
                   </div>
                   <div className={styles.text}>
                     <h3>Mass Viewing</h3>
