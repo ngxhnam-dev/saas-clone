@@ -13,7 +13,7 @@ const FeatureSection = () => {
         />
       </span>
 
-      <MountOnView minHeight={300} rootMargin="-300px 0px">
+      <MountOnView minHeight={0} rootMargin="-300px 0px">
         <div className="container">
           <div className="row">
             {/* Left image */}
@@ -84,7 +84,7 @@ const FeatureSection = () => {
           <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/sh6.png" />
         </span>
       </div>
-      <MountOnView minHeight={300} rootMargin="-300px 0px">
+      <MountOnView minHeight={0} rootMargin="-300px 0px">
         <div className={`row ${styles.reverse}`}>
           {/* Left text */}
           <div className="col-lg-6">

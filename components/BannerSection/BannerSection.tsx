@@ -47,7 +47,7 @@ const BannerSection = () => {
       </div>
 
       <MountOnView
-        minHeight={300}
+        minHeight={0}
         rootMargin="100px 0px"
         requireScrollOnSmall={false}
         smallMaxWidth={1024}

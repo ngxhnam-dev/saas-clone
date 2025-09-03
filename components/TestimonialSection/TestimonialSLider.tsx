@@ -5,7 +5,6 @@ import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from './TestimonialSection.module.scss';
 import TestimonialCard from './TestimonialCard';
-import Image from 'next/image';
 import { useRef } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
@@ -82,11 +81,11 @@ const TestimonialSlider = () => {
         spaceBetween={40}
         centeredSlides
         loop
-        // autoplay={{
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        // }}
-        // modules={[Autoplay]}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
         className="mySwiper"
         style={{ maxWidth: '620px' }}
         onSwiper={(swiper) => {
@@ -95,24 +94,10 @@ const TestimonialSlider = () => {
       >
         {userData.map((user) => (
           <SwiperSlide key={user.name} style={{ maxWidth: '620px' }}>
-            <TestimonialCard {...user} />
+            <TestimonialCard {...user} goPrev={goPrev} goNext={goNext} />
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className={styles['testimonial-pagination-arrow-btn']}>
-        <span onClick={() => goPrev()}>
-          <ArrowLeft
-            size={20}
-            className={styles['testimonial-pagination-arrow']}
-          />
-        </span>
-        <span onClick={() => goNext()}>
-          <ArrowRight
-            size={20}
-            className={styles['testimonial-pagination-arrow']}
-          />
-        </span>
-      </div>
 
       {/* Pagination custom bằng avatar */}
       <div className={styles['testimonial-pagination']}>
@@ -123,14 +108,7 @@ const TestimonialSlider = () => {
             onClick={() => swiperRef.current?.slideToLoop(index)}
             // slideToLoop đảm bảo đi đúng slide kể cả khi loop = true
           >
-            <Image
-              src={data.avatar}
-              alt={data.name}
-              width={64}
-              height={64}
-              quality={100}
-              className="rounded-full"
-            />
+            <img src={data.avatar} alt={data.name} className="rounded-full" />
           </button>
         ))}
       </div>

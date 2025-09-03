@@ -1,7 +1,5 @@
 import React from 'react';
 import styles from './ContactSection.module.scss';
-import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
 import MountOnView from '../MountOnView';
 const ContactSection = () => {
   return (
@@ -10,7 +8,7 @@ const ContactSection = () => {
         <MountOnView minHeight={100} rootMargin="-200px 0px">
           <div className={`${styles['contact-help-item']}`}>
             <span>
-              <Image
+              <img
                 src={
                   'https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic5.png'
                 }
@@ -36,7 +34,7 @@ const ContactSection = () => {
         <MountOnView minHeight={100} rootMargin="-200px 0px">
           <div className={`${styles['contact-help-item']}`}>
             <span>
-              <Image
+              <img
                 src={
                   'https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic6.png'
                 }

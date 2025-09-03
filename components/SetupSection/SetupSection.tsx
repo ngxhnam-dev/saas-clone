@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './SetupSection.module.scss';
 import MountOnView from '../MountOnView';
-import Image from 'next/image';
 
 const SetupSection = () => {
   return (
@@ -54,14 +53,14 @@ const SetupSection = () => {
           >
             <p>Download this Software from</p>
             <div className={`${styles['download-btn-wrapper']}`}>
-              <Image
+              <img
                 className={`${styles['download-btn']}`}
                 alt=""
                 width={218}
                 height={72}
                 src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/app-btn1.png"
               />
-              <Image
+              <img
                 className={`${styles['download-btn']}`}
                 alt=""
                 width={218}

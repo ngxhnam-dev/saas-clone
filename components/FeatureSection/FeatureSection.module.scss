@@ -5,12 +5,12 @@ $bp-tablet: 992px; // ~md/lg
 $bp-laptop: 1200px; // ~xl
 
 .section {
-  padding: 100px 0;
+  padding: 80px 0 40px 0;
   position: relative;
 }
 
 .spacing {
-  height: 200px;
+  height: 100px;
   width: 100%;
 }
 
@@ -93,6 +93,7 @@ $bp-laptop: 1200px; // ~xl
     font-weight: 700;
     line-height: 1.1;
     max-width: 470px;
+    z-index: 1;
   }
   p {
     color: #526a8b;
@@ -191,9 +192,11 @@ $bp-laptop: 1200px; // ~xl
 }
 
 @media (min-width: #{$bp-mobile-sm}) and (max-width: #{$bp-mobile}) {
+  .spacing {
+    height: 20px;
+  }
   .textWrap {
     margin-top: 100%;
-    padding: 32px 0;
 
     h2 {
       font-size: 36px;

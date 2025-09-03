@@ -70,7 +70,6 @@ $bp-laptop: 1200px; // ~xl
 
   /* ===== Slide ===== */
   .homenest-challenge-slide {
-    flex: 0 0 60%;
     max-width: 631px;
     padding-inline: 12px;
     position: relative;
@@ -246,10 +245,6 @@ $bp-laptop: 1200px; // ~xl
       padding: 32px 0;
     }
 
-    .homenest-challenge-slide {
-      flex-basis: 70%;
-    }
-
     .homenest-challenge-item {
       padding: 48px 40px;
       border-radius: 32px;
@@ -259,7 +254,7 @@ $bp-laptop: 1200px; // ~xl
     .homenest-challenge-nav {
       &-number {
         font-size: 14px;
-        visibility: hidden;
+        display: none;
       }
       &-toggle .homenest-challenge-nav-toggle-button {
         width: 48px;
@@ -291,8 +286,8 @@ $bp-laptop: 1200px; // ~xl
     }
 
     .homenest-challenge-viewport {
-      padding: 20px 0;
-      margin: 20px 0;
+      padding: 0;
+      margin: 10px 0;
     }
 
     /* Kích hoạt scroll-snap để vuốt mượt từng card */
@@ -302,15 +297,9 @@ $bp-laptop: 1200px; // ~xl
       gap: 0;
     }
 
-    .homenest-challenge-slide {
-      flex: 0 0 88%;
-      max-width: none;
-      padding-inline: 8px;
-      scroll-snap-align: start;
-    }
-
     .homenest-challenge-item {
       padding: 28px 20px;
+      margin: 0;
       border-radius: 24px;
       min-height: unset; /* để auto theo nội dung */
       height: auto;
@@ -331,12 +320,17 @@ $bp-laptop: 1200px; // ~xl
     .toBig {
       font-size: clamp(28px, 9vw, 44px);
     }
+
+    .homenest-challenge-nav-toogle-button {
+      width: 36px !important;
+      height: 36px !important;
+    }
   }
 
   /* Laptop ≤ 1200px (nhẹ) */
   @media (max-width: #{$bp-laptop}) and (min-width: #{$bp-tablet + 1}) {
     .homenest-challenge-slide {
-      flex-basis: 64%;
+      flex-basis: 100%;
     }
   }
 }

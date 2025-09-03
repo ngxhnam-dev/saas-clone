@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './AboutSection.module.scss';
 import MountOnView from '../MountOnView';
-import Image from 'next/image';
+import Counter from './Counter';
 
 const AboutSection = () => {
   return (
@@ -19,28 +19,24 @@ const AboutSection = () => {
             <span
               className={`${styles.shape} ${styles.fadeInLeft} ${styles.animated}`}
             >
-              <Image
+              <img
                 alt=""
                 src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab-bg1.png"
-                width={546}
-                height={553}
               />
             </span>
             <div className={styles.imgWrap}>
               <div
                 className={`${styles.fadeInRight} ${styles.animated} ${styles.img1}`}
               >
-                <Image
+                <img
                   src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab1.png"
                   alt=""
-                  width={474}
-                  height={518}
                 />
               </div>
               <div
                 className={`${styles.fadeInLeft} ${styles.animated} ${styles.img2}`}
               >
-                <Image
+                <img
                   src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab2.png"
                   alt=""
                   width={355}
@@ -50,7 +46,7 @@ const AboutSection = () => {
               <div
                 className={`${styles.fadeInLeft} ${styles.animated} ${styles.img3}`}
               >
-                <Image
+                <img
                   alt=""
                   width={439}
                   height={326}
@@ -82,7 +78,7 @@ const AboutSection = () => {
                   className={`${styles.fadeInRight} ${styles.animated} ${styles.featureItem}`}
                 >
                   <div className={`${styles.icon}`}>
-                    <Image
+                    <img
                       alt=""
                       width={18}
                       height={18}
@@ -90,7 +86,7 @@ const AboutSection = () => {
                     />
                   </div>
                   <div className={styles.text}>
-                    <h3>Hashtag targetting</h3>
+                    <h3>Hashtag targeting</h3>
                     <p>Attract relevant users using specific hashtags.</p>
                   </div>
                 </div>
@@ -99,7 +95,7 @@ const AboutSection = () => {
                   className={`${styles.fadeInLeft} ${styles.animated} ${styles.featureItem}`}
                 >
                   <div className={`${styles.icon}`}>
-                    <Image
+                    <img
                       alt=""
                       width={18}
                       height={10}
@@ -116,7 +112,7 @@ const AboutSection = () => {
                   className={`${styles.fadeInRight} ${styles.animated} ${styles.featureItem}`}
                 >
                   <div className={`${styles.icon}`}>
-                    <Image
+                    <img
                       alt=""
                       width={20}
                       height={16}
@@ -135,7 +131,7 @@ const AboutSection = () => {
                   <div
                     className={`${styles.icon} d-flex justify-content-center align-items-center`}
                   >
-                    <Image
+                    <img
                       alt=""
                       width={25}
                       height={17}
@@ -164,20 +160,38 @@ const AboutSection = () => {
             >
               <div className={` ${styles.funItem}`}>
                 <div className={styles.counter}>
-                  <h2 className="counter">250K+</h2>
+                  <Counter
+                    end={100000}
+                    duration={2000}
+                    suffix="+"
+                    format="compact"
+                  />
                 </div>
+
                 <p>Active Users</p>
               </div>
               <div className={` ${styles.funItem}`}>
                 <div className={styles.counter}>
-                  <h2 className="counter">20K+</h2>
+                  <Counter
+                    end={20000}
+                    duration={2000}
+                    suffix="+"
+                    format="compact"
+                  />
                 </div>
+
                 <p>UI Blocks Elements</p>
               </div>
               <div className={` ${styles.funItem}`}>
                 <div className={styles.counter}>
-                  <h2 className="counter">45K+</h2>
+                  <Counter
+                    end={45000}
+                    duration={2000}
+                    suffix="+"
+                    format="compact"
+                  />
                 </div>
+
                 <p>Active Team</p>
               </div>
             </div>
