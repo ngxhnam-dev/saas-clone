@@ -10,48 +10,42 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const userData = [
   {
-    avatar:
-      'https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/tf1.jpg',
+    avatar: '/assets/images/tf1.webp',
     quote:
       '" Digital marketing can be very complex, but our team is here to help you through this process and get tangible results. We work with exceptional companies and make it our mission to help them succeed. We are equipped with all the skillsets."',
     name: 'Tony Stark',
     role: 'Iron Man',
   },
   {
-    avatar:
-      'https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/tf3.jpg',
+    avatar: '/assets/images/tf3.webp',
     quote:
       '" Digital marketing can be very complex, but our team is here to help you through this process and get tangible results. We work with exceptional companies and make it our mission to help them succeed. We are equipped with all the skillsets."',
     name: 'Peter Parker',
     role: 'Iron Man',
   },
   {
-    avatar:
-      'https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/tf2.jpg',
+    avatar: '/assets/images/tf2.webp',
     quote:
       '" Digital marketing can be very complex, but our team is here to help you through this process and get tangible results. We work with exceptional companies and make it our mission to help them succeed. We are equipped with all the skillsets."',
     name: 'Steve Roger',
     role: 'Captain America',
   },
   {
-    avatar:
-      'https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/tf4.jpg',
+    avatar: '/assets/images/tf4.webp',
     quote:
       '" Digital marketing can be very complex, but our team is here to help you through this process and get tangible results. We work with exceptional companies and make it our mission to help them succeed. We are equipped with all the skillsets."',
     name: 'Wanda Maximoff',
     role: 'Scarlet Witch',
   },
   {
-    avatar:
-      'https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/tf5.jpg',
+    avatar: '/assets/images/tf5.webp',
     quote:
       '" Digital marketing can be very complex, but our team is here to help you through this process and get tangible results. We work with exceptional companies and make it our mission to help them succeed. We are equipped with all the skillsets."',
     name: 'Steven Strange',
     role: 'Doctor Strange',
   },
   {
-    avatar:
-      'https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/tf6.jpg',
+    avatar: '/assets/images/tf6.webp',
     quote:
       '" Digital marketing can be very complex, but our team is here to help you through this process and get tangible results. We work with exceptional companies and make it our mission to help them succeed. We are equipped with all the skillsets."',
     name: 'Bruce Banner',

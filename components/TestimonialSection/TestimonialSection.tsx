@@ -7,9 +7,7 @@ const TestimonialSection = () => {
     <div className={`${styles['testimonial-section']}`}>
       <img
         className={`${styles['testimonial-shape1']}`}
-        src={
-          'https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/tst-shape1.png'
-        }
+        src={'/assets/images/tst-shape1.webp'}
         alt=""
         width={573}
         height={821}
@@ -19,9 +17,7 @@ const TestimonialSection = () => {
         alt=""
         width={573}
         height={821}
-        src={
-          'https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/tst-shape2.png'
-        }
+        src={'/assets/images/tst-shape2.webp'}
       />
 
       <div className={`${styles['testimonial']} container`}>

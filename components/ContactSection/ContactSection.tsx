@@ -9,9 +9,7 @@ const ContactSection = () => {
           <div className={`${styles['contact-help-item']}`}>
             <span>
               <img
-                src={
-                  'https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic5.png'
-                }
+                src={'/assets/images/ic5.webp'}
                 alt=""
                 width={47}
                 height={51}
@@ -35,9 +33,7 @@ const ContactSection = () => {
           <div className={`${styles['contact-help-item']}`}>
             <span>
               <img
-                src={
-                  'https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic6.png'
-                }
+                src={'/assets/images/ic6.webp'}
                 alt=""
                 width={47}
                 height={51}

@@ -7,10 +7,7 @@ const FeatureSection = () => {
   return (
     <div className={styles.section}>
       <span className={`${styles.shape1} position-absolute`}>
-        <img
-          style={{ width: '60%' }}
-          src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/sh3.png"
-        />
+        <img style={{ width: '60%' }} src="/assets/images/sh3.webp" />
       </span>
 
       <MountOnView minHeight={0} rootMargin="-300px 0px">
@@ -22,29 +19,29 @@ const FeatureSection = () => {
                 <span
                   className={`${styles.img1} zoomIn animated position-absolute`}
                 >
-                  <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ft2.png" />
+                  <img src="/assets/images/ft2.webp" />
                 </span>
                 <span
                   className={`${styles.img2} fadeInLeft animated position-absolute`}
                 >
-                  <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ft1.png" />
+                  <img src="/assets/images/ft1.webp" />
                 </span>
                 <span
                   className={`${styles.img3} fadeInDown animated position-absolute`}
                 >
-                  <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ft3.png" />
+                  <img src="/assets/images/ft3.webp" />
                 </span>
                 <span className={`${styles.img4} position-absolute`}>
-                  <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ft4.png" />
+                  <img src="/assets/images/ft4.webp" />
                 </span>
                 <span className={`${styles.img5} position-absolute`}>
-                  <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ft5.png" />
+                  <img src="/assets/images/ft5.webp" />
                 </span>
                 <span className={`${styles.img6} position-absolute`}>
-                  <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ft6.png" />
+                  <img src="/assets/images/ft6.webp" />
                 </span>
                 <span className={`${styles.img7} position-absolute`}>
-                  <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ft9.png" />
+                  <img src="/assets/images/ft9.webp" />
                 </span>
               </div>
             </div>
@@ -78,10 +75,10 @@ const FeatureSection = () => {
 
       <div className="container position-relative">
         <span className={`${styles.shape2} position-absolute`}>
-          <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/sh4.png" />
+          <img src="/assets/images/sh4.webp" />
         </span>
         <span className={`${styles.shape3} position-absolute`}>
-          <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/sh6.png" />
+          <img src="/assets/images/sh6.webp" />
         </span>
       </div>
       <MountOnView minHeight={0} rootMargin="-300px 0px">
@@ -114,23 +111,23 @@ const FeatureSection = () => {
               <span
                 className={`${styles.img1} zoomIn animated position-absolute`}
               >
-                <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ft8.png" />
+                <img src="/assets/images/ft8.webp" />
               </span>
               <span
                 className={`${styles.img2} fadeInLeft animated position-absolute`}
               >
-                <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ft7.png" />
+                <img src="/assets/images/ft7.webp" />
               </span>
               <span
                 className={`${styles.img3} fadeInDown animated position-absolute`}
               >
-                <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ft11.png" />
+                <img src="/assets/images/ft11.webp" />
               </span>
               <span className={`${styles.img4} position-absolute`}>
-                <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ft10.png" />
+                <img src="/assets/images/ft10.webp" />
               </span>
               <span className={`${styles.img7} position-absolute`}>
-                <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ft9.png" />
+                <img src="/assets/images/ft9.webp" />
               </span>
             </div>
           </div>

@@ -19,25 +19,19 @@ const AboutSection = () => {
             <span
               className={`${styles.shape} ${styles.fadeInLeft} ${styles.animated}`}
             >
-              <img
-                alt=""
-                src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab-bg1.png"
-              />
+              <img alt="" src="/assets/images/ab-bg1.webp" />
             </span>
             <div className={styles.imgWrap}>
               <div
                 className={`${styles.fadeInRight} ${styles.animated} ${styles.img1}`}
               >
-                <img
-                  src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab1.png"
-                  alt=""
-                />
+                <img src="/assets/images/ab1.webp" alt="" />
               </div>
               <div
                 className={`${styles.fadeInLeft} ${styles.animated} ${styles.img2}`}
               >
                 <img
-                  src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab2.png"
+                  src="/assets/images/ab2.webp"
                   alt=""
                   width={355}
                   height={182}
@@ -50,7 +44,7 @@ const AboutSection = () => {
                   alt=""
                   width={439}
                   height={326}
-                  src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ab3.png"
+                  src="/assets/images/ab3.webp"
                 />
               </div>
             </div>
@@ -82,7 +76,7 @@ const AboutSection = () => {
                       alt=""
                       width={18}
                       height={18}
-                      src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic1.png"
+                      src="/assets/images/ic1.webp"
                     />
                   </div>
                   <div className={styles.text}>
@@ -99,7 +93,7 @@ const AboutSection = () => {
                       alt=""
                       width={18}
                       height={10}
-                      src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic2.png"
+                      src="/assets/images/ic2.webp"
                     />
                   </div>
                   <div className={styles.text}>
@@ -116,7 +110,7 @@ const AboutSection = () => {
                       alt=""
                       width={20}
                       height={16}
-                      src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic3.png"
+                      src="/assets/images/ic3.webp"
                     />
                   </div>
                   <div className={styles.text}>
@@ -135,7 +129,7 @@ const AboutSection = () => {
                       alt=""
                       width={25}
                       height={17}
-                      src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ic4.png"
+                      src="/assets/images/ic4.webp"
                     />
                   </div>
                   <div className={styles.text}>

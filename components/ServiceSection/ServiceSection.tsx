@@ -165,7 +165,7 @@ const ServiceSection = () => {
           <div className={cn(styles['homenest-service-img'], 'mb-3')}>
             <div className={styles['homenest-service-img-item']}>
               <img
-                src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ts3.jpg"
+                src="/assets/images/ts3.webp"
                 alt=""
                 width={55}
                 height={55}
@@ -173,7 +173,7 @@ const ServiceSection = () => {
             </div>
             <div className={styles['homenest-service-img-item']}>
               <img
-                src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ts2.jpg"
+                src="/assets/images/ts2.webp"
                 alt=""
                 width={55}
                 height={55}
@@ -181,7 +181,7 @@ const ServiceSection = () => {
             </div>
             <div className={styles['homenest-service-img-item']}>
               <img
-                src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/ts1.jpg"
+                src="/assets/images/ts1.webp"
                 alt=""
                 width={55}
                 height={55}

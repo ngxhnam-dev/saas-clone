@@ -27,8 +27,7 @@ $bp-laptop: 1200px; // ~xl
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    background: url('https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/map1.png')
-      no-repeat center;
+    background: url('/assets/images/map1.webp') no-repeat center;
     background-size: contain;
     h1 {
       font-weight: 700;
@@ -94,7 +93,6 @@ $bp-laptop: 1200px; // ~xl
         animation: digital_animation_1 20s infinite linear alternate;
       }
       .testimonial-dot8 {
-        bottom: -30%;
         right: 30%;
         animation: digital_animation_2 20s infinite linear alternate;
       }

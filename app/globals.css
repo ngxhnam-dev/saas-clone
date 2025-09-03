@@ -26,7 +26,5 @@ body {
   position: fixed;
   inset: 0;
   z-index: 999999999;
-  background: #fff
-    url('https://themexriver.com/wp/ximsa/saas/wp-content/themes/ximsa/assets/images/icons/preloader.svg')
-    no-repeat center / 100px;
+  background: #fff url('/assets/images/preloader.svg') no-repeat center / 100px;
 }

@@ -7,10 +7,10 @@ const BannerSection = () => {
     <>
       <div className={styles.homenestBanner}>
         <span className={`${styles.shape1} `}>
-          <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/sh1.png" />
+          <img src="/assets/images/sh1.webp" />
         </span>
         <span className={`${styles.shape2}`}>
-          <img src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/sh2.png" />
+          <img src="assets/images/sh2.webp" />
         </span>
         <div className="container">
           <div className={styles.content}>
@@ -54,22 +54,13 @@ const BannerSection = () => {
       >
         <div className={`${styles.imgWrap}`}>
           <div className={`${styles.img1} ${styles.zoomIn}`}>
-            <img
-              src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/banner-v1.png"
-              alt=""
-            />
+            <img src="/assets/images/banner-v1.webp" alt="" />
           </div>
           <div className={`${styles.img2} ${styles.fadeInUp}`}>
-            <img
-              src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/banner-v2.png"
-              alt=""
-            />
+            <img src="/assets/images/banner-v2.webp" alt="" />
           </div>
           <div className={`${styles.img3} ${styles.fadeInUp}`}>
-            <img
-              src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/banner-v3.png"
-              alt=""
-            />
+            <img src="/assets/images/banner-v3.webp" alt="" />
           </div>
         </div>
       </MountOnView>

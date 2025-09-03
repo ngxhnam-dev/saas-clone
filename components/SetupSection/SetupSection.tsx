@@ -58,14 +58,14 @@ const SetupSection = () => {
                 alt=""
                 width={218}
                 height={72}
-                src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/app-btn1.png"
+                src="/assets/images/app-btn1.webp"
               />
               <img
                 className={`${styles['download-btn']}`}
                 alt=""
                 width={218}
                 height={72}
-                src="https://themexriver.com/wp/ximsa/saas/wp-content/uploads/sites/10/2022/04/app-btn2.png"
+                src="/assets/images/app-btn2.webp"
               />
             </div>
           </div>
