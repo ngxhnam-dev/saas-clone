@@ -158,12 +158,18 @@
 }
 
 @media (max-width: 992px) {
+  .contact-section {
+    padding: 60px 0;
+  }
   .contact-help {
     flex-direction: column;
   }
 
   .contact-content {
     padding: 20% 12% !important;
+    border-radius: 60px !important;
+    gap: 40px !important;
+    margin: 0 !important;
     h2 {
       font-size: 36px;
     }
