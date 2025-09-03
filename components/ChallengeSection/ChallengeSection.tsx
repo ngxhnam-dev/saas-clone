@@ -122,7 +122,9 @@ export default function ChallengeSection() {
                     )}
                   >
                     <p>Latest News</p>
-                    <h3>{item}</h3>
+                    <h3>
+                      <a href="#">{item}</a>
+                    </h3>
                     <span>by ximsa-wp / April 9, 2022</span>
                   </div>
                 </SwiperSlide>

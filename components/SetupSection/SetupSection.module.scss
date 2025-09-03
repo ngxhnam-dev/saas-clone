@@ -92,6 +92,11 @@ $bp-laptop: 1200px; // ~xl
   .download-btn-wrapper {
     display: flex;
     justify-content: center;
+    gap: 20px;
+
+    .download-btn {
+      cursor: pointer;
+    }
   }
 }
 

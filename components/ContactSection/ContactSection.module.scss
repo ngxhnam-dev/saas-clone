@@ -71,9 +71,16 @@
     background-size: cover;
   }
 
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
   h2 {
     width: 80%;
-    font-size: 48px;
+    font-size: 2rem;
     font-weight: 700;
     color: #fff;
     line-height: 1.2;
@@ -185,10 +192,11 @@
     h2 {
       font-size: 28px;
     }
-    form {
-      display: flex;
+    .contact-form {
+      display: flex !important;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       gap: 20px;
     }
     .contact-sub-content {

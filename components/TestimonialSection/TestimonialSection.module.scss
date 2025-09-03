@@ -14,14 +14,10 @@ $bp-laptop: 1200px; // ~xl
   }
 
   .testimonial-shape1 {
-    width: 100%;
-    height: auto;
     bottom: 0;
     left: 0;
   }
   .testimonial-shape2 {
-    width: 100%;
-    height: auto;
     top: 0;
     right: 0;
   }
@@ -127,6 +123,7 @@ $bp-laptop: 1200px; // ~xl
   margin-left: 30px;
   margin-bottom: 30px;
   position: relative;
+  user-select: none;
 
   &::before,
   &::after {
@@ -176,6 +173,7 @@ $bp-laptop: 1200px; // ~xl
     border-radius: 60px;
     box-shadow: 0.872px 4.985px 30px 0px rgba(6, 17, 59, 0.1);
     color: #526a8b;
+    margin: 20px;
 
     span {
       font-size: 26px;

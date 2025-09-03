@@ -105,12 +105,13 @@ $bp-laptop: 1200px; // ~xl
       text-align: center;
     }
 
-    h3 {
+    h3 a {
       margin: 24px 0;
       font-weight: 800;
       font-size: clamp(18px, 2vw, 22px);
       line-height: 1.4;
       color: #20395c;
+      text-decoration: none;
     }
 
     span {
@@ -138,7 +139,7 @@ $bp-laptop: 1200px; // ~xl
       top: 5%;
       right: -10px;
     }
-    h3 {
+    h3 a {
       color: #fff;
       z-index: 2;
     }

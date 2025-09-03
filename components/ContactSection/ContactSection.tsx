@@ -62,7 +62,7 @@ const ContactSection = () => {
       </div>
       <div className={`${styles['contact-content']}`}>
         <h2>Start growing your Instagram today</h2>
-        <form>
+        <form className={`${styles['contact-form']}`}>
           <input type="email" required placeholder="Enter Email Address" />
           <button type="submit">
             <span>
