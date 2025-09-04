@@ -82,53 +82,55 @@ const FeatureSection = () => {
         </span>
       </div>
       <MountOnView minHeight={0} rootMargin="-300px 0px">
-        <div className={`row ${styles.reverse}`}>
-          {/* Left text */}
-          <div className="col-lg-6">
-            <div className={styles.textWrap}>
-              <h2>Get real YouTube Subscriber faster</h2>
-              <p>
-                Our Instagram growth service helps you attract new followers who
-                are interested in your content. Grow your audience, expand your
-                reach, raise more your awareness.
-              </p>
-              <div>
-                <Check size={16} color="#397fe0" />{' '}
-                <span>Only real & targeted new followers</span>
-              </div>
-              <div className={styles.btnRow}>
-                <a href="#">
-                  Start Now
-                  <ArrowRight size={14} className={styles.btnArrow} />
-                </a>
+        <div className="container">
+          <div className={`row ${styles.reverse}`}>
+            {/* Left text */}
+            <div className="col-lg-6">
+              <div className={styles.textWrap}>
+                <h2>Get real YouTube Subscriber faster</h2>
+                <p>
+                  Our Instagram growth service helps you attract new followers
+                  who are interested in your content. Grow your audience, expand
+                  your reach, raise more your awareness.
+                </p>
+                <div>
+                  <Check size={16} color="#397fe0" />{' '}
+                  <span>Only real & targeted new followers</span>
+                </div>
+                <div className={styles.btnRow}>
+                  <a href="#">
+                    Start Now
+                    <ArrowRight size={14} className={styles.btnArrow} />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Right image */}
-          <div className="col-lg-6">
-            <div className={`${styles.imgWrap} position-relative`}>
-              <span
-                className={`${styles.img1} zoomIn animated position-absolute`}
-              >
-                <img src="/assets/images/ft8.webp" />
-              </span>
-              <span
-                className={`${styles.img2} fadeInLeft animated position-absolute`}
-              >
-                <img src="/assets/images/ft7.webp" />
-              </span>
-              <span
-                className={`${styles.img3} fadeInDown animated position-absolute`}
-              >
-                <img src="/assets/images/ft11.webp" />
-              </span>
-              <span className={`${styles.img4} position-absolute`}>
-                <img src="/assets/images/ft10.webp" />
-              </span>
-              <span className={`${styles.img7} position-absolute`}>
-                <img src="/assets/images/ft9.webp" />
-              </span>
+            {/* Right image */}
+            <div className="col-lg-6">
+              <div className={`${styles.imgWrap} position-relative`}>
+                <span
+                  className={`${styles.img1} zoomIn animated position-absolute`}
+                >
+                  <img src="/assets/images/ft8.webp" />
+                </span>
+                <span
+                  className={`${styles.img2} fadeInLeft animated position-absolute`}
+                >
+                  <img src="/assets/images/ft7.webp" />
+                </span>
+                <span
+                  className={`${styles.img3} fadeInDown animated position-absolute`}
+                >
+                  <img src="/assets/images/ft11.webp" />
+                </span>
+                <span className={`${styles.img4} position-absolute`}>
+                  <img src="/assets/images/ft10.webp" />
+                </span>
+                <span className={`${styles.img7} position-absolute`}>
+                  <img src="/assets/images/ft9.webp" />
+                </span>
+              </div>
             </div>
           </div>
         </div>
